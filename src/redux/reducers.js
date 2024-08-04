@@ -1,4 +1,7 @@
 import { ADD_CONTACT, DELETE_CONTACT, SET_FILTER } from './actions';
+// Reducers declaration using the createReducer function from redux JS toolkit
+import { createReducer } from '@reduxjs/toolkit';
+import { addContact, deleteContact, setFilter } from './actions';
 
 const initialContactsState = [
   { id: 'id-1', name: 'Rosie Simpson', number: '459-12-56' },
@@ -31,9 +34,9 @@ const initialFilterState = '';
 
 // root reducer is the combination of all reducers in a single application
 
-// Reducers declaration using the createReducer function from redux JS toolkit
-import { createReducer } from '@reduxjs/toolkit';
-import { addContact, deleteContact, setFilter } from './actions';
+// // Reducers declaration using the createReducer function from redux JS toolkit
+// import { createReducer } from '@reduxjs/toolkit';
+// import { addContact, deleteContact, setFilter } from './actions';
 
 // the create reducer function takes two arguments
 // first is the initial state object
